@@ -28,5 +28,5 @@ const assertArraysEqual = function(array1, array2) {
 
 
 // TEST CODE
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => should PASS
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1])); // => should FAIL
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
