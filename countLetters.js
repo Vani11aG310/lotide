@@ -8,11 +8,10 @@ const assertEqual = function(arg1, arg2) {
 
 const countLetters = function(stringToCount) {
   const countOfLetters = {};
-  const characterToSkip = " ";
   // loop over string and add count of character to object
   for (const letter of stringToCount) {
     // check if character is not a space
-    if (letter !== characterToSkip) {
+    if (letter !== " ") {
       if (countOfLetters[letter]) {
         countOfLetters[letter] += 1;
       } else {
