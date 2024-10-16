@@ -28,9 +28,8 @@ const middle = function(inputArray) {
       const index2 = inputArray.length / 2;
       const index1 = index2 - 1;
       middleArray.push(inputArray[index1], inputArray[index2])
-    }
-    // check if array length is odd
-    if (inputArray.length % 2 !== 0) {
+    } else {
+      // check if array length is odd
       // find the middle term and push to middleArray
       const index = Math.floor(inputArray.length / 2);
       middleArray.push(inputArray[index])
