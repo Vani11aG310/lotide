@@ -18,8 +18,8 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-const without = function (sourceArray, itemsToRemove) {
-  const newArray = sourceArray;
+const without = function(sourceArray, itemsToRemove) {
+  const newArray = sourceArray.slice();
   // loop through sourceArray
   for (const index in sourceArray) {
     // loop through itemsToRemove
@@ -31,14 +31,14 @@ const without = function (sourceArray, itemsToRemove) {
     }
   }
   return (newArray);
-}
+};
 
 
 // TEST CODE
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
-console.log(without(["Cookie", "Cake", "Lard", 64], ["Lard", "64"])); // => ["Cookie", "Cake", 64]
-console.log(without(["4", 3, "5", "7", 9, 4], [9, "4", 3])); // => ["5", "7", 4]
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+assertArraysEqual(without(["Cookie", "Cake", "Lard", 64], ["Lard", "64"]), ["Cookie", "Cake", 64]);
+assertArraysEqual(without(["4", "3", "2", 5], ["2"]), ["4", "3", 5]);
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
