@@ -12,9 +12,9 @@ const findKeyByValue = function(objectToSearch, valueToSearchWith) {
   for (const key in objectToSearch) {
     if (objectToSearch[key] === valueToSearchWith) {
       founditem = key;
+      return (founditem);
     }
   }
-  return (founditem);
 };
 
 
