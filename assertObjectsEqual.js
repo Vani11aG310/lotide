@@ -1,11 +1,3 @@
-const assertEqual = function(arg1, arg2) {
-  if (arg1 === arg2) {
-    console.log(`✅✅✅ Assertion Passed: ${arg1} === ${arg2}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${arg1} !== ${arg2}`);
-  }
-};
-
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return (false);
