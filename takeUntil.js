@@ -1,5 +1,8 @@
 const takeUntil = function(array, callback) {
   const slicedArray = [];
+  if (!Array.isArray(array) || typeof callback !== 'function') {
+    return [];
+  }
   for (let index = 0; !callback(array[index]); index++) {
     slicedArray.push(array[index])
   };
