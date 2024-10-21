@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@jvillanueva2000/lotide",
   "version": "1.0.0",
   "description": "package for manipulating and working with javascript arrays and objects",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -18,7 +18,7 @@
     "objects",
     "javascript"
   ],
-  "author": "Angelo Villanueva",
+  "author": "jvillanueva2000",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vani11aG310/lotide/issues"
